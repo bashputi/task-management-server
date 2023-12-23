@@ -6,8 +6,8 @@ const app = express();
 
 app.use(cors({
     origin: [
-      'https://task-management-aa12f.web.app',
-      'https://task-management-aa12f.firebaseapp.com'
+      'https://task-client-b37a4.web.app',
+      'https://task-client-b37a4.firebaseapp.com'
  
   ],
   credentials: true,
@@ -92,8 +92,8 @@ app.get('/usertasks', async (req, res) => {
 
 
 
-        await client.db("admin").command({ ping: 1 });
-        console.log("Pinged your deployment. You successfully connected to MongoDB!");
+        // await client.db("admin").command({ ping: 1 });
+        // console.log("Pinged your deployment. You successfully connected to MongoDB!");
       } finally {
       
       }
