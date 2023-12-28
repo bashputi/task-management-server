@@ -1,5 +1,5 @@
 const express = require('express');
-const cors = require('cors');
+const cors = require("cors");
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 require('dotenv').config();
 const app = express();
@@ -81,8 +81,6 @@ app.get('/usertasks', async (req, res) => {
             const result = await taskCollection.updateOne(filter, item, options);
             res.send(result);
           })
-
-
 
 
         // await client.db("admin").command({ ping: 1 });
