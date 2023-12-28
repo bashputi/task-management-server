@@ -6,8 +6,9 @@ const app = express();
 
 app.use(cors({
     origin: [
+      'https://callous-growth.surge.sh/',
       'https://task-client-b37a4.web.app',
-      'https://task-client-b37a4.firebaseapp.com'
+    
  
   ],
   credentials: true,
